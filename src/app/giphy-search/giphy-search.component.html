@@ -1,0 +1,132 @@
+<body>
+
+  <div class="header">
+    <div class="row">
+      <div class="col-12 heading">
+        <span>Gif Search</span>
+      </div>
+
+      <div class="col-12 search">
+        <input type="text" placeholder="What are you looking for?" class="textbox_bg What_are_you_looking_for_"  [(ngModel)]="searchVal">
+        <!-- <button class="Show_All">Show All <i class="fa fa-caret-down" aria-hidden="true"></i></button> -->
+        <select class="Show_All">
+          <option>Show All  &#9660;</option>
+        </select>
+        <button (click)="getGif()" class="search_btn1"><i class="fa fa-search search-icon"></i></button>
+      </div>
+      <div class="col-12 you_can_search">
+        <span>You can search any gif with our search</span>
+      </div>
+      <div class="col-12 everything_you_need">
+        <span>Everything you need for your creative projects, websites, banners, presentations, magazines and
+          advertising.</span>
+      </div>
+    </div>
+  </div>
+  
+    <div class="row content">
+      <div class="col-4" *ngFor = "let images of data">
+        <img src="{{images.images.downsized.url}}" class="portfolio_img">
+      </div>
+    </div>
+  
+  <div class="row footer">
+    <div class="col-4 sign_up">
+      <span>Sign up and <br /> get free content every week.</span>
+      <div class="col-12 email_txt">
+        <input type="text" placeholder="Enter your email.." class="email">
+      </div>
+      <div class="col-12">
+        <button class="btn-signUp">Sign Up</button>
+      </div>
+    </div>
+    <div class="col-8 browse">
+      <div class="col-12 browse_txt"><span>Browse by categories</span></div>
+      <div class="col-3 browse_cat">
+        <div class="col-12">
+         <a href="#">Graphics</a> 
+        </div>
+        <div class="col-12">
+          <a href="#">  PSDs </a>
+        </div>
+        <div class="col-12">
+          <a href="#"> Icons </a>
+        </div>
+        <div class="col-12">
+          <a href="#"> Templates </a>
+        </div>
+        <div class="col-12">
+          <a href="#"> Themes </a>
+        </div>
+      </div>
+      <div class="col-3 browse_cat">
+        <div class="col-12">
+          <a href="#"> Addons </a>
+        </div>
+        <div class="col-12">
+          <a href="#"> Fonts </a>
+        </div>
+        <div class="col-12">
+          <a href="#">Textures</a>
+        </div>
+        <div class="col-12">
+          <a href="#">Patterns</a>
+        </div>
+        <div class="col-12">
+          <a href="#">Backgrounds</a>
+        </div>
+
+      </div>
+      <div class="col-3 browse_cat">
+        <div class="col-12">
+          <a href="#">Buttons</a>
+        </div>
+        <div class="col-12">
+          <a href="#">Forms</a>
+        </div>
+        <div class="col-12">
+          <a href="#">GUI</a>
+        </div>
+        <div class="col-12">
+          <a href="#">Navigation</a>
+        </div>
+        <div class="col-12">
+          <a href="#">UI Kits</a>
+        </div>
+      </div>
+      <div class="col-3 browse_cat">
+        <div class="col-12">
+          <a href="#">Infographics</a>
+        </div>
+        <div class="col-12">
+          <a href="#">Graphics</a>
+        </div>
+        <div class="col-12">
+          <a href="#">Logos</a>
+        </div>
+        <div class="col-12">
+          <a href="#">Vectors</a>
+        </div>
+        <div class="col-12">
+          <a href="#">Business Cards</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row bottomlinks">
+  <div class="col-8">
+  <div class="col-12">
+   <a href="#" class="footer_links">Affiliates</a> &nbsp; / &nbsp; <a href="#" class="footer_links">Contributors</a>&nbsp; / &nbsp; <a href="#" class="footer_links">Press/Media</a>&nbsp; / &nbsp; <a href="#" class="footer_links">Careers</a>&nbsp; / &nbsp; <a href="#" class="footer_links">About</a> &nbsp; / &nbsp;<a href="#" class="footer_links">Contact</a>
+  </div>
+</div>
+<div class="col-4 icons">
+  <a class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> &nbsp;
+  <a class="facebook"><i class="fa fa-twitter" aria-hidden="true"></i></a> &nbsp;
+  <a class="facebook"><i class="fa fa-google-plus" aria-hidden="true"></i></a> &nbsp;
+  <a class="facebook"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+</div>
+<div class="col-12">
+  <span class="copyright">Copyright &#169; 2018 myCompany All rights reserved.</span>
+</div>
+</div>
+</body>

@@ -1,1 +1,224 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(//db.onlinewebfonts.com/c/3dd6e9888191722420f62dd54664bc94?family=Myriad+Pro);
+@font-face {font-family: "Myriad Pro"; src: url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.eot"); src: url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.woff") format("woff"), url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.svg#Myriad Pro") format("svg"); }
+
+body { margin:0; }
+
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header{
+  width: 100%;
+  height:400px;
+  margin-bottom: 0;
+  background:#c65b00;
+  font-family: 'Myriad Pro' !important; 
+  /* position: fixed; */
+  left: 0;
+  top: 0;
+  padding: 3%;
+}
+.heading{
+  text-align: center;
+  font-family: 'Myriad Pro' !important;
+  font-size: 50px;
+  color: #f7f7f7;
+  margin-top: 1%;
+}
+.search{
+  text-align: center;
+  padding: 2%;
+}
+.textbox_bg {
+  background-color: rgb(255, 255, 255);
+  width: 420px;
+  height: 50px;
+}
+.What_are_you_looking_for_ {
+  font-size: 18px;
+  font-family: "Myriad Pro";
+  color: rgb(190, 203, 209);
+  line-height: 1.2;
+  text-align: left;
+  text-indent: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-color: transparent;
+}
+.you_can_search{
+font-size: 25px;
+color: #f7f7f7;
+font-family: "Myriad Pro";
+text-align: center;
+padding-bottom: 2% !important;
+}
+.everything_you_need{
+font-size: 15px;
+color: #f7f7f7;
+font-family: "Myriad Pro";
+text-align: center;
+letter-spacing: 0.5px;
+}
+.Show_All{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(169, 190, 200);
+  line-height: 1.2;
+  text-align: left;
+  background-color: rgb(226, 238, 244);
+  width: 130px;
+  height: 50px;
+  border: transparent;
+  padding: 1%;
+}
+.search_btn{
+  font-size: 18px;
+  width: 100px;
+  height: 52px;
+  background-color: black;
+}
+.search_btn1{
+  width: 4%;
+    height: 51px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    border: transparent;
+    cursor: pointer;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.footer{
+  width: 100%;
+  height: 300px;
+  background-color:#363b3e;
+  
+}
+.sign_up{
+  color: #ffffff;
+  font-size: 24px;
+  color: #f7f7f7;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  line-height: 1.5;
+  padding-top: 3%;
+  padding-left: 3%;
+}
+.email_txt{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.email{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  text-align: left;
+  width: 80%;
+  background: #363b3e;
+  border-radius: 5px;
+  border-color: rgb(143,152,157);
+  color:rgb(143,152,157);
+  text-indent: 10px;
+  border-width: thin;
+  height: 50px;
+  
+}
+.btn-signUp{
+  font-size: 21px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  text-align: center;
+  width: 80%;
+  background: #3789fa;
+  border-radius: 5px;
+  border-color:#3789fa;
+  color: rgb(255, 255, 255);
+  text-indent: 10px;
+  border-width: thin;
+  height: 50px;
+}
+.browse{
+  color: #ffffff;
+  font-size: 24px;
+  color: #f7f7f7;
+  text-align: left;
+  line-height: 1.5;
+  padding-top: 3%;
+  padding-left: 5%;
+}
+.browse_txt{
+  padding-bottom: 2%;
+  font-family: 'Roboto', sans-serif;
+}
+.browse_cat{
+  font-size: 14px;
+  color:rgb(143,152,157)!important;
+  font-family: 'Helvetica';
+  text-align: left;
+  line-height: 2.14;
+  text-decoration: none;
+}
+.bottomlinks{
+  padding: 3%;
+}
+.footer_links{
+  color: #8a949a;
+  background-color:#ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+.content{
+  background-color: #f7f7f7;
+  padding: 3%;
+}
+.browse_cat,a{
+  font-size: 14px;
+  color:rgb(143,152,157)!important;
+  font-family: "Helvetica";
+  text-align: left;
+  line-height: 2.14;
+  text-decoration: none;
+}
+.facebook {
+  /* display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em; */
+    border-radius: 50%;
+    border: 2px solid rgb(205, 209, 215);
+    padding: 10px;
+}
+.icons{
+  text-align: end;
+}
+.search-icon{
+  color: white;
+  font-size: large;
+}
+.copyright{
+  color: rgb(205, 209, 215) ;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+.portfolio_img{
+  width: 95%;
+}
+[class*="col-"] {
+  float: left;
+}
