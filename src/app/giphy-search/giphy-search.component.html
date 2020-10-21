@@ -1,38 +1,28 @@
 <body>
-
-  <!-- <div class="header"> -->
-    <div class="row header">
-      <div class="col-12 heading">
-        <span>Gif Search</span>
-      </div>
-
-      <div class="col-12 search">
-        <input type="text" placeholder="What are you looking for?" class="textbox_bg What_are_you_looking_for_"  [(ngModel)]="searchVal" (keypress)="getGif($event,'')">
-        <button class="Show_All">Show All &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></button>
-        <!-- <select class="Show_All">
-          <option>Show All  &#9660;</option>
-        </select> -->
-        <!-- <ul class="Show_All">
-          <li>Show All</li>
-        </ul> -->
-        <button (click)="getGif($event,'1')" class="search_btn1"><i class="fa fa-search search-icon"></i></button>
-      </div>
-      <div class="col-12 you_can_search">
-        <span>You can search any gif with our search</span>
-      </div>
-      <div class="col-12 everything_you_need">
-        <span>Everything you need for your creative projects, websites, banners, presentations, magazines and
-          advertising.</span>
-      </div>
+  <div class="row header">
+    <div class="col-12 heading">
+      <span>Gif Search</span>
     </div>
-  <!-- </div> -->
-  
-    <div class="row content">
-      <div class="col-4" *ngFor = "let images of data">
-        <img src="{{images.images.downsized.url}}" class="portfolio_img">
-      </div>
+    <div class="col-12 search">
+      <input type="text" placeholder="What are you looking for?" class="textbox_bg What_are_you_looking_for_"
+        [(ngModel)]="searchVal" (keypress)="getGif($event,'')">
+      <button class="Show_All">Show All &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></button>
+      <button (click)="getGif($event,'1')" class="search_btn1"><i class="fa fa-search search-icon"></i></button>
     </div>
-  
+    <div class="col-12 you_can_search">
+      <span>You can search any gif with our search</span>
+    </div>
+    <div class="col-12 everything_you_need">
+      <span>Everything you need for your creative projects, websites, banners, presentations, magazines and
+        advertising.</span>
+    </div>
+  </div>
+  <div class="row content">
+    <div class="col-4" *ngFor="let images of data">
+      <img src="{{images.images.downsized.url}}" class="portfolio_img">
+    </div>
+  </div>
+
   <div class="row footer">
     <div class="col-4 sign_up">
       <span>Sign up and <br /> get free content every week.</span>
@@ -47,10 +37,10 @@
       <div class="col-12 browse_txt"><span>Browse by categories</span></div>
       <div class="col-3 browse_cat">
         <div class="col-12">
-         <a href="#">Graphics</a> 
+          <a href="#">Graphics</a>
         </div>
         <div class="col-12">
-          <a href="#">  PSDs </a>
+          <a href="#"> PSDs </a>
         </div>
         <div class="col-12">
           <a href="#"> Icons </a>
@@ -117,19 +107,24 @@
     </div>
   </div>
   <div class="row bottomlinks">
-  <div class="col-8">
-  <div class="col-12">
-   <a href="#" class="footer_links">Affiliates</a> &nbsp; / &nbsp; <a href="#" class="footer_links">Contributors</a>&nbsp; / &nbsp; <a href="#" class="footer_links">Press/Media</a>&nbsp; / &nbsp; <a href="#" class="footer_links">Careers</a>&nbsp; / &nbsp; <a href="#" class="footer_links">About</a> &nbsp; / &nbsp;<a href="#" class="footer_links">Contact</a>
+    <div class="col-8">
+      <div class="col-12">
+        <a href="#" class="footer_links">Affiliates</a> &nbsp; / &nbsp; <a href="#"
+          class="footer_links">Contributors</a>&nbsp; / &nbsp; <a href="#" class="footer_links">Press/Media</a>&nbsp; /
+        &nbsp; <a href="#" class="footer_links">Careers</a>&nbsp; / &nbsp; <a href="#" class="footer_links">About</a>
+        &nbsp; / &nbsp;<a href="#" class="footer_links">Contact</a>
+      </div>
+    </div>
+    <div class="col-4 icons">
+      <ul class="social-icon-list">
+        <li><a><i class="fa fa-facebook social-ions" aria-hidden="true"></i></a></li>
+        <li><a><i class="fa fa-twitter social-ions" aria-hidden="true"></i></a></li>
+        <li><a><i class="fa fa-google-plus social-ions" aria-hidden="true"></i></a></li>
+        <li><a><i class="fa fa-instagram social-ions" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-12">
+      <span class="copyright">Copyright &#169; 2018 myCompany All rights reserved.</span>
+    </div>
   </div>
-</div>
-<div class="col-4 icons">
-  <a class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> &nbsp;
-  <a class="facebook"><i class="fa fa-twitter" aria-hidden="true"></i></a> &nbsp;
-  <a class="facebook"><i class="fa fa-google-plus" aria-hidden="true"></i></a> &nbsp;
-  <a class="facebook"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-</div>
-<div class="col-12">
-  <span class="copyright">Copyright &#169; 2018 myCompany All rights reserved.</span>
-</div>
-</div>
 </body>

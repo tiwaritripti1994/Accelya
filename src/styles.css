@@ -220,3 +220,54 @@ letter-spacing: 0.5px;
 [class*="col-"] {
   float: left;
 }
+
+ul.social-icon-list li {
+  list-style: none;
+  display: inline-flex;
+  margin-right: 10px !important;
+}
+
+ul.social-icon-list li:last-child{
+  margin-right: 0px !important;
+} 
+
+.social-ions {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(205, 209, 215);
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.textbox_bg:focus,.Show_All:focus,.search_btn1:focus {
+  outline: unset !important;
+}
+
+@media (min-width: 320px) and (max-width: 480px) { 
+  .textbox_bg{
+    width:50% !important;
+  }
+  .Show_All{
+    width:100px !important;
+    line-height: 2.5;
+  }
+  .search_btn1{
+    width:40px !important;
+  }
+
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .footer {
+  height:unset !important;
+  padding-top:30px;
+  padding-bottom: 30px;
+  }
+
+  .header {
+  padding-top:20px;
+  padding-bottom: 30px;
+  height: unset !important;
+  }
+}
