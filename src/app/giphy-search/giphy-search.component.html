@@ -1,18 +1,21 @@
 <body>
 
-  <div class="header">
-    <div class="row">
+  <!-- <div class="header"> -->
+    <div class="row header">
       <div class="col-12 heading">
         <span>Gif Search</span>
       </div>
 
       <div class="col-12 search">
-        <input type="text" placeholder="What are you looking for?" class="textbox_bg What_are_you_looking_for_"  [(ngModel)]="searchVal">
-        <!-- <button class="Show_All">Show All <i class="fa fa-caret-down" aria-hidden="true"></i></button> -->
-        <select class="Show_All">
+        <input type="text" placeholder="What are you looking for?" class="textbox_bg What_are_you_looking_for_"  [(ngModel)]="searchVal" (keypress)="getGif($event,'')">
+        <button class="Show_All">Show All &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <!-- <select class="Show_All">
           <option>Show All  &#9660;</option>
-        </select>
-        <button (click)="getGif()" class="search_btn1"><i class="fa fa-search search-icon"></i></button>
+        </select> -->
+        <!-- <ul class="Show_All">
+          <li>Show All</li>
+        </ul> -->
+        <button (click)="getGif($event,'1')" class="search_btn1"><i class="fa fa-search search-icon"></i></button>
       </div>
       <div class="col-12 you_can_search">
         <span>You can search any gif with our search</span>
@@ -22,7 +25,7 @@
           advertising.</span>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
   
     <div class="row content">
       <div class="col-4" *ngFor = "let images of data">

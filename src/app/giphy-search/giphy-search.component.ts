@@ -12,8 +12,9 @@ export class GiphySearchComponent implements OnInit {
   constructor( private searchgifService:SearchgifService) { }
   ngOnInit() {
   }
-  getGif(){
-    console.log("HI",this.searchVal);
+  getGif(event: any,type){
+   // console.log("HI",this.searchVal);
+   if(event.keyCode == 13 || type == 1){
     let promise = new Promise((res,rej) => {
       this.searchgifService.getGif(this.searchVal).subscribe(
       data => {
@@ -24,4 +25,5 @@ export class GiphySearchComponent implements OnInit {
       })
     })
   }
+}
 }
